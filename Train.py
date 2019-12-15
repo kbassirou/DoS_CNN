@@ -59,6 +59,7 @@ MODEL_STORE_PATH = "Model"
 model         = ConvNetDoS()
 print("\033[1m")
 print("Features Extraction")
+
 features_list = [2, 3, 4, 5, 6, 43, 44, 50, 51, 54]
 csv_syn       = 'Syn.csv'
 csv_udp       = 'UDPLag.csv'
