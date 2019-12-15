@@ -60,8 +60,8 @@ model         = ConvNetDoS()
 print("\033[1m")
 print("Features Extraction")
 features_list = [2, 3, 4, 5, 6, 43, 44, 50, 51, 54]
-csv_syn       = '/home/kabre/Documents/Master-2/Projets/CNN/Dataset/Syn.csv'
-csv_udp       = '/home/kabre/Documents/Master-2/Projets/CNN/Dataset/UDPLag.csv'
+csv_syn       = 'Syn.csv'
+csv_udp       = 'UDPLag.csv'
 
 syn_attack    = 1
 udp_attack    = 2
