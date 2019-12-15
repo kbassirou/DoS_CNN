@@ -6,8 +6,6 @@ model            = torch.load(MODEL_STORE_PATH)
 model.eval()
 
 
-
-
 # Min and max value of each feature
 min_ip_address = 0
 max_ip_address = 255255255255
