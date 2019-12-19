@@ -107,17 +107,3 @@ class DatasetLoader(Dataset):
 
 
 	normalize = classmethod(normalize)
-
-
-if __name__ == '__main__':
-    features_list = [2, 3, 4, 5, 6, 43, 44, 50, 51, 54]
-    csv_syn       = '/home/kabre/Documents/Master-2/Projets/CNN/Dataset/Syn.csv'
-    csv_udp       = '/home/kabre/Documents/Master-2/Projets/CNN/Dataset/UDPLag.csv'
-    data_syn      = DatasetLoader(csv_syn, 1, 200, 1000, features_list)
-    data_udp      = DatasetLoader(csv_udp, 2, 200, 10000, features_list)
-    syn_train, syn_labels     = data_syn.load_data()
-    udp_train, udp_labels     = data_udp.load_data()
-    print(udp_train)
-    
-    train, labels = data_syn.concat(udp_train, udp_labels)
-    print(labels)
